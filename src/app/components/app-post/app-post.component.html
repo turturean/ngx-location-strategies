@@ -1,0 +1,11 @@
+<ng-container *ngIf="post">
+  <article>
+    <header>Product</header>
+    <p>ID: <span>{{post.id}}</span></p>
+    <p>Name: <span>{{post.name}}</span></p>
+    <p>Description: <span>{{post.description}}</span></p>
+    <footer>
+      <a [routerLink]="['/posts']" role="button">Go Back</a>
+    </footer>
+  </article>
+</ng-container>

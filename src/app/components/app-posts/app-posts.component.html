@@ -1,0 +1,20 @@
+<table  role="grid">
+  <thead>
+    <tr>
+      <td>#</td>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let post of posts; let i = index">
+    <tr scope="row" [attr.id]="'p'+i">
+      <td [routerLink]="['/posts']" [fragment]="'p'+i">{{i}}</td>
+      <td [routerLink]="['/post', post.id]">{{post.id}}</td>
+      <td [routerLink]="['/post', post.id]">{{post.name}}</td>
+      <td [routerLink]="['/post', post.id]">{{post.description}}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
