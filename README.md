@@ -6,11 +6,11 @@ By default Angular has 2 option for route your application:
 3. QueryLocationStrategy This location strategy it is a combination between PathLocationStrategy and HashLocationStrategy.
    One custom parameter indicates the view that will be used by the router and without to have dependencies by route pathname.
 
-|                | Use <kbd>#</kbd> in url | Server enable <kbd>module rewrite</kbd> |
-|:---------------|:-----------------------:|:---------------------------------------:|
-| Path Strategy  |          :+1:           |                                         |
-| Hash Strategy  |                         |                  :+1:                   |
-| Query Strategy |          :+1:           |                  :+1:                   |
+|                         | Path Strategy | Hash Strategy | Query Strategy |
+|:------------------------|:-------------:|:-------------:|:--------------:|
+| Use <kbd>#</kbd> in url |     :+1:      |    :minus:    |      :+1:      |
+| Runs in any path names  |    :minus:    |     :+1:      |      :+1:      |
+
 
 # Installation
 ```typescript
