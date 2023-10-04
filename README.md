@@ -27,4 +27,4 @@ export class AppRoutingModule {
 # Example
 Path Strategy http://localhost:4200/posts?orderby=name <br/>
 Hash Strategy http://localhost:4200/#/posts&orderby=name <br/>
-Query Strategy http://localhost:4200/?app=/posts&orderby=name#myTag <br/>
+Query Strategy http://localhost:4200/?my-app=/posts&orderby=name#myTag <br/>
